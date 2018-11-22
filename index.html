@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Days to next events</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="calculator">
+	<h1>Days Calculator</h1>
+	<form>
+		<h3>Select your favorite date </h3>
+		<select id="service" onchange="DropOption(this)">
+			<option value=""  disabled selected >Please Choose...</option>
+			<option value="01-01">New Year's Day</option>
+			<option value="02-14">Valentine's Day</option>
+			<option value="03-17">Saint Patrick's Day</option>
+			<option value="04-21">Easter</option>
+			<option value="10-31">Halloween</option>
+			<option value="11-01">All Saints Day</option>
+			<option value="11-22">Thanksgiving</option>
+			<option value="12-25">Christmas</option>
+			<option value="YB"> Birthday </option>
+
+		</select>
+		
+		<button type="button" id="CalculateButton" onclick="CalculateFunction()" disabled>Calculate!</button>
+		
+		<label id="lb" > Select Your Next Birthday : </label> 
+		<input type="date" name="date" id="Date"  onchange="getBirthday()">
+	</form>
+	<p id="ResultScreen" ></p>
+</div>
+<script type="text/javascript" src="code.js" ></script>
+</body>
+</html>
